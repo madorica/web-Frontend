@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>buttonClick</title>
+</head>
+<body>
+    <h1>buttonClick</h1>
+    
+    <!-- Create buttons with unique IDs -->
+    <button id="1">Button 1</button>
+    <button id="2">Button 2</button>
+    <button id="3">Button 3</button>
+    
+    <!-- Display area for button click results -->
+    <div id="result"></div>
+
+    <!-- Include a script to handle button clicks -->
+    <script>
+        const handleButtonClick = (buttonId) => {
+            // Redirect to a new URL based on the button ID
+            window.location.href = `/${buttonId}`;
+        };
+
+        document.getElementById("1").addEventListener("click", () => {
+            handleButtonClick(1);
+        });
+
+        document.getElementById("2").addEventListener("click", () => {
+            handleButtonClick(2);
+        });
+
+        document.getElementById("3").addEventListener("click", () => {
+            handleButtonClick(3);
+        });
+    </script>
+    </script>
+</body>
+</html>
